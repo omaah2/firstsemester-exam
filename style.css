@@ -79,6 +79,7 @@ li .active {
       .section-center {
              width: 95%;
         }
+        
         .hamburger {
             position: fixed;
             z-index: 100;
