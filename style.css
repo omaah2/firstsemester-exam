@@ -32,7 +32,7 @@ span{
 }
 
 .header-center,
-.nav-center,
+.menu,
 .section-center {
     width: 90%;
     max-width: 1200px;
@@ -71,17 +71,36 @@ li .active {
     color: #005ae2;
 }
 
+
 @media screen and (min-width: 900px) {
 
-    .header-center,
-    .nav-center,
-    .section-center {
-        width: 95%;
-    }
+      .header-center,
+      .menu,
+      .section-center {
+             width: 95%;
+        }
+        .hamburger {
+            position: fixed;
+            z-index: 100;
+            top: 1rem;
+            right: 1rem;
+            padding: 4px;
+            border: black solid 1px;
+            background: white;
+            cursor: pointer;
+        }
+    
+        .closeIcon {
+            display: none;
+        }
 
+    
+        .showMenu {
+            transform: translateY(0);
+        }
 }
 
-.nav-center {
+.menu {
     padding: 12px 0;
     display: flex;
     align-items: center;
@@ -121,17 +140,20 @@ li .active {
         display: none;
     }
 
-    .nav-links,
-    .signin-links {
+    .navMenu,
+    .right-menu {
         display: flex;
         align-items: center;
         color: #141414;
-        gap: 4rem;
+        gap: 2rem;
     }
 }
 
+
 header {
     padding-top: 3.5rem;
+    max-width: 98%;
+    margin: auto;
 }
 
 .header {
@@ -146,22 +168,48 @@ header {
     text-transform: capitalize;
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .header .first-text span {
     color: #005ae2;
 }
 
-#span{
-    display: flex;
+#first-text-ic {
     position: relative;
 }
-#span img{
+
+#first-text-ic img {
     position: absolute;
-    bottom: 1%;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+@media (max-width: 815px) {
+    .first-text {
+        text-transform: capitalize;
+        max-width: 1000px;
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+
+    #first-text-ic {
+        display: block !important;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 745px) {
+    .first-text {
+        font-size: 2.3rem;
+    }
+
+    #first-text-ic {
+        display: block !important;
+        margin-bottom: 1rem;
+    }
+}
 
 .header-paragraph {
     max-width: 710px;
@@ -179,7 +227,7 @@ header {
     width: 9rem;
 }
 
-.bg-none {
+.btn-none {
     background: none;
     border: none;
 }

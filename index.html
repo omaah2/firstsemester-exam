@@ -28,11 +28,11 @@
   <body>
 <!-- Navbar section -->
 <nav>
-    <div class="nav-center">
+    <div class="menu">
         <div class="logo">
             <img class="logo-icon" src="./images/Logo.svg" alt="nav-logo" />
         </div>
-        <ul class="nav-links">
+        <ul class="navMenu">
             <li><a href="#" class="active">My URLs</a></li>
             <li class="tag">
                 <a href="#">Features</a>
@@ -42,10 +42,14 @@
             <li><a href="#">Analytics</a></li>
             <li><a href="#">FAQs</a></li>
         </ul>
-        <ul class="signin-links">
+        <ul class="right-menu">
             <li><a href="#" class="active">Log in</a></li>
             <li><a href="#" class="sign-in-btn">Try for free</a></li>
         </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
     </div>
 </nav>
 <!-- End of navbar section -->
@@ -53,11 +57,10 @@
 <header>
     <div class="header">
         <h1 class="first-text">
-            Optimize Your Online Experience with Our Advanced
-            <span id="span">URL Shortening <img src="./images/underline.svg" /></span>
-            Solutions
+          Optimize Your Online Experience with Our Advanced
+          <span id="first-text-ic">URL Shortening <img src="./images/underline.svg" /></span>
+          Solutions
         </h1>
-        
         <p class="header-paragraph">
             Personalize your shortened URLs to align with your brand identity.
             Utilize custom slugs, branded links, and domain customization options
@@ -65,7 +68,7 @@
         </p>
         <div class="header-btns">
             <button class="header-btn btn-blue btn">Sign up</button>
-            <button class="header-btn bg-none primary-blue-300 btn">
+            <button class="header-btn btn-none "">
                 Learn more
             </button>
         </div>
@@ -613,5 +616,6 @@
     </div>
     </footer>
     <!-- footer end -->
+    <script src="./script.js"></script>
   </body>
 </html>
